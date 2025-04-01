@@ -1,0 +1,178 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect With Me</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://i.pinimg.com/736x/3d/ec/7e/3dec7e75fda592b1c992fbc55645e2d7.jpg");
+        }
+
+        /* Header & Navigation Bar */
+        header {
+            background-color: #f8a8c6;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 5px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            transition: background 0.3s;
+            border-radius: 10px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: white;
+            color: #e391c4;
+        }
+
+        nav ul li a.active {
+            background-color: white;
+            color: #e391c4;
+            padding: 5px 10px;
+        }
+
+        /* Header Section */
+        .header-container {
+            width: 90%;
+            margin: 40px auto;
+            padding: 20px;
+            background-color:#f5c6d6;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .header-container h1 {
+            font-size: 28px;
+            color: #333;
+            font-family: 'Georgia', serif;
+        }
+
+        .header-container p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* QR Code Section */
+        .qr-container {
+            width: 90%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .qr-box {
+            width: 260px;
+            height: auto;
+            padding: 15px;
+            background-color: #f5c6d6;
+            border-radius: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .qr-box a img {
+            width: 220px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .qr-box a img:hover {
+            transform: scale(1.1);
+        }
+
+        .qr-box h2 {
+            font-size: 18px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            .qr-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .qr-box {
+                width: 90%;
+                max-width: 260px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About_me.html">About me</a></li>
+                <li><a href="My_Education.html">My Education</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="My_happiest_moment.html">My happiest moment</a></li>
+                <li><a href="My_sosial_media.html" class="active">My social media</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Header -->
+    <div class="header-container">
+        <h1>Let's Connect with Me! 😊</h1>
+        <p>MAAF TAKDE BENDA MENARIK, come say hi!</p>
+    </div>
+
+    <!-- QR Code Section -->
+    <div class="qr-container">
+        <div class="qr-box">
+            <a href="https://www.instagram.com/wannur_suaidah/" target="_blank">
+                <img src="qr.ig.jpeg" alt="Instagram QR Code">
+            </a>
+            <h2>INSTAGRAM</h2>
+        </div>
+        <div class="qr-box">
+            <a href="https://www.tiktok.com/@kimsajangg" target="_blank">
+                <img src="qr.tiktok.png" alt="TikTok QR Code">
+            </a>
+            <h2>TIKTOK</h2>
+        </div>
+    </div>
+    <footer style="background-color: #f8a8c6; text-align: center; padding: 5px 0; font-size: 14px;">
+        <p>&copy; 2025 Kim Wannur. All rights reserved.</p>
+    </footer>    
+
+</body>
+</html>

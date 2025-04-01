@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://i.pinimg.com/736x/3d/ec/7e/3dec7e75fda592b1c992fbc55645e2d7.jpg");
+        }
+
+        /* Header & Navigation Bar */
+        header {
+            background-color: #f8a8c6;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 5px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            transition: background 0.3s;
+            border-radius: 10px;
+        }
+
+        nav ul li a:hover {
+            background-color: white;
+            color: #e391c4;
+        }
+
+        nav ul li a.active {
+            background-color: white;
+            color: #e391c4;
+            padding: 5px 10px;
+        }
+
+        /* First Section: Image & Sentence Only */
+        .header-container {
+            width: 80%;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .header-container img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Second Section: My Skills & Table */
+        .table-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5c6d6;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Skills Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: white;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #d3a4b0;
+            text-align: center;
+        }
+
+        /* Table Images */
+        td img {
+            width: 30px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        /* Sentence Styling */
+        .table-container p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .header-container img {
+                width: 150px;
+            }
+            
+            .table-container {
+                width: 90%;
+            }
+
+            table, th, td {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About_me.html">About me</a></li>
+                <li><a href="My_Education.html">My Education</a></li>
+                <li><a href="Skills.html" class="active">Skills</a></li>
+                <li><a href="My_happiest_moment.html">My happiest moment</a></li>
+                <li><a href="My_sosial_media.html">My social media</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- First Section: Image & Sentence Only -->
+    <div class="header-container">
+        <img src="wannur.jpg" alt="Your Photo">
+        <h2>What I'm Good At?</h2>
+    </div>
+
+    <!-- Second Section: My Skills & Table -->
+    <div class="table-container">
+        <h2>My Skills</h2>
+        <p>“Here are some of the skills I’ve picked up along the way!”</p>
+        
+        <table>
+            <tr>
+                <th>Skills</th>
+                <th>Description</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td><img src="Canva.webp" alt="Canva Logo"> Canva</td>
+                <td>Easy-to-use tool for designing posters, social media posts, and presentations.</td>
+                <td>Excellent</td>
+            </tr>
+            <tr>
+                <td><img src="word.png" alt="Microsoft Word Logo"> Microsoft Word</td>
+                <td>Essential for writing and formatting documents.</td>
+                <td>Excellent</td>
+            </tr>
+            <tr>
+                <td><img src="powerpoint.png" alt="PowerPoint Logo"> Microsoft PowerPoint</td>
+                <td>Great for creating engaging presentations.</td>
+                <td>Excellent</td>
+            </tr>
+            <tr>
+                <td><img src="css.png" alt="CSS Logo"> CSS</td>
+                <td>Styles websites with colors, fonts, and layouts.</td>
+                <td>Average</td>
+            </tr>
+            <tr>
+                <td><img src="html.png" alt="HTML Logo"> HTML</td>
+                <td>Builds the structure of web pages.</td>
+                <td>Average</td>
+            </tr>
+            <tr>
+                <td><img src="java.png" alt="Java Logo"> JavaScript</td>
+                <td>Adds interactivity and dynamic features to websites.</td>
+                <td>Average</td>
+            </tr>
+        </table>
+    </div>
+    <footer style="background-color: #f8a8c6; text-align: center; padding: 5px 0; font-size: 14px;">
+        <p>&copy; 2025 Kim Wannur. All rights reserved.</p>
+    </footer>   
+
+</body>
+</html>

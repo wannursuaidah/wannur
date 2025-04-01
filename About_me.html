@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://i.pinimg.com/736x/3d/ec/7e/3dec7e75fda592b1c992fbc55645e2d7.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Header & Navigation Bar */
+        header {
+            background-color: #f8a8c6;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 5px 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            background-color: white;
+            color: #e391c4;
+            border-radius: 10px;
+            padding: 5px 10px;
+        }
+
+        /* Content Styling */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .section {
+            background: #fad2e1;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .text-content {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .section img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .small-img {
+            width: 200px;
+            margin-right: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .sub-text {
+            color: #b5838d;
+            font-style: italic;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+            }
+
+            .section img {
+                width: 80%;
+                margin-bottom: 15px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .text-content {
+                padding: 0;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .section img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About_me.html" class="active">About me</a></li>
+                <li><a href="My_Education.html">Education</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="My_happiest_moment.html">My happiest moment</a></li>
+                <li><a href="My_sosial_media.html">My social media</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <div class="text-content">
+                <h1><b>About me</b></h1>
+                <p class="sub-text">Hey, I'm Kim Wannur! Welcome to My Little Corner of the Internet</p>
+                <p>I'm currently studying Foundation in Computer Technology, and once I'm done, I plan to continue my Degree in Software Engineering. My dream? To become a software engineer in Interlaken, Switzerland—making cool tech, living my best life, and, of course, making lots of money! 😆</p>
+            </div>
+            <img src="me.jpg" alt="Kim Wannur">
+        </div>
+
+        <div class="section">
+            <img src="food.jpg" alt="Sundubu Jjigae" class="small-img">
+            <div class="text-content">
+                <h2 class="sub-text">I Love Korean FoodS :3</h2>
+                <p>If there's one thing I could eat forever, it's Sundubu Jjigae—that warm, spicy, soft tofu stew that just hits differently. Pair it with some crispy Kimchi, and life suddenly feels complete. If you haven't tried it yet, trust me, you're missing out!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background-color: #f8a8c6; text-align: center; padding: 5px 0; font-size: 14px;">
+        <p>&copy; 2025 Kim Wannur. All rights reserved.</p>
+    </footer> 
+
+</body>
+</html>
